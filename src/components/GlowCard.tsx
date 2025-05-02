@@ -1,0 +1,52 @@
+import { ReactNode, useRef } from "react";
+
+type GlowCardProps = {
+	children: ReactNode;
+	review: string;
+};
+
+const GlowCard = ({ children, review }: GlowCardProps) => {
+	const cardRef = useRef<HTMLDivElement | null>(null);
+
+	const handleMouseMove = (
+		e: React.MouseEvent<HTMLDivElement, MouseEvent>
+	) => {
+		const card = cardRef.current;
+		if (!card) return;
+
+		const rect = card.getBoundingClientRect();
+		const mouseX = e.clientX - rect.left - rect.width / 2;
+		const mouseY = e.clientY - rect.top - rect.height / 2;
+
+		let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
+		angle = (angle + 360) % 360;
+
+		card.style.setProperty("--start", (angle + 60).toString());
+	};
+
+	return (
+		<div
+			ref={cardRef}
+			onMouseMove={handleMouseMove}
+			className="card card-border  rounded-xl p-10 mb-5 break-inside-avoid-column"
+		>
+			<div className="glow"></div>
+			<div className="flex items-center gap-1 mb-5">
+				{Array.from({ length: 5 }, (_, i) => (
+					<img
+						key={i}
+						src="/images/star.png"
+						alt="star"
+						className="size-5"
+					/>
+				))}
+			</div>
+			<div className="mb-5">
+				<p className="text-white-50 text-lg">{review}</p>
+			</div>
+			{children}
+		</div>
+	);
+};
+
+export default GlowCard;
