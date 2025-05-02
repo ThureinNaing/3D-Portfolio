@@ -1,5 +1,5 @@
 import Hero from "./section/Hero";
-import MouseTrail from "./MouseTrial";
+// import MouseTrail from "./MouseTrial";
 import ShowcaseSection from "./section/ShowcaseSection";
 import Navbar from "./components/Navbar";
 import FeatureCard from "./section/FeatureCard";
