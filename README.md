@@ -1,4 +1,4 @@
-<div align="center">
+
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 -   Three.js
@@ -8,4 +8,4 @@
 -   Tailwind CSS
 -   Vite
 -   React 19
-</div>
+
