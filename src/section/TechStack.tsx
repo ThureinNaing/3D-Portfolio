@@ -1,8 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import TitleHeader from "../components/TitleHeader";
-import { techStackIcons } from "../constants";
-import TechIcon from "../components/Models/TechLogos/TechIcon";
+import { techStackImgs } from "../constants";
+// import { techStackIcons,  } from "../constants";
+// import TechIcon from "../components/Models/TechLogos/TechIcon";
 
 const TechStack = () => {
 	// Animate the tech cards in the skills section
@@ -36,12 +37,13 @@ const TechStack = () => {
 		<div id="skills" className="felx-center section-padding">
 			<div className="w-full h-full md:px-10 px-5">
 				<TitleHeader
-					title="In-Depth Learning and Prefered Technologies"
-					sub="What I Learn "
+					title="In-depth Learning Tech Stack"
+					sub="🛠️ My Tech Stack"
 				/>
 
 				<div className="tech-grid">
-					{techStackIcons.map((icon) => (
+					{/* for 3d model */}
+					{/* {techStackIcons.map((icon) => (
 						<div
 							key={icon.name}
 							className="card-border tech-card overflow-hidden group rounded-lg"
@@ -54,16 +56,26 @@ const TechStack = () => {
 							<p className=" text-sm font-semibold text-center p-3">
 								{icon.name}
 							</p>
-
-							{/* <div className="tech-card-content">
+						</div>
+					))} */}
+					{/* This is for the img part */}
+					{techStackImgs.map((techStackIcon, index) => (
+						<div
+							key={index}
+							className="card-border tech-card overflow-hidden group rounded-lg"
+						>
+							<div className="tech-card-animated-bg" />
+							<div className="tech-card-content">
 								<div className="tech-icon-wrapper">
-									<TechIcon model={icon} />
+									<img
+										src={techStackIcon.imgPath}
+										alt="{techStackIcon.name}"
+									/>
 								</div>
-
 								<div className="padding-x w-full">
-									<p>{icon.name}</p>
+									<p>{techStackIcon.name}</p>
 								</div>
-							</div> */}
+							</div>
 						</div>
 					))}
 				</div>

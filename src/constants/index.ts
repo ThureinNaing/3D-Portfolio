@@ -11,10 +11,10 @@ const navLinks = [
 		name: "Skills",
 		link: "#skills",
 	},
-	{
-		name: "Testimonials",
-		link: "#testimonials",
-	},
+	// {
+	// 	name: "Testimonials",
+	// 	link: "#testimonials",
+	// },
 ];
 
 const words = [
@@ -31,8 +31,7 @@ const words = [
 const counterItems = [
 	{ value: 2, suffix: "+", label: "Years of Experience" },
 	{ value: 5, suffix: "+", label: "Satisfied Clients" },
-	{ value: 10, suffix: "+", label: "Completed Projects" },
-	{ value: 90, suffix: "%", label: "Client Retention Rate" },
+	{ value: 7, suffix: "+", label: "Completed Projects" },
 ];
 
 const logoIconsList = [
@@ -91,24 +90,32 @@ const abilities = [
 
 const techStackImgs = [
 	{
-		name: "React Developer",
-		imgPath: "/images/logos/react.png",
+		name: "React",
+		imgPath: "/images/logos/React.svg",
 	},
 	{
-		name: "Python Developer",
-		imgPath: "/images/logos/python.svg",
+		name: "Next.js",
+		imgPath: "/images/logos/Nextjs.svg",
 	},
 	{
-		name: "Backend Developer",
-		imgPath: "/images/logos/node.png",
+		name: "Node.js",
+		imgPath: "/images/logos/node.svg",
 	},
 	{
-		name: "Interactive Developer",
-		imgPath: "/images/logos/three.png",
+		name: "Express.js",
+		imgPath: "/images/logos/express.svg",
 	},
 	{
-		name: "Project Manager",
-		imgPath: "/images/logos/git.svg",
+		name: "MongoDB",
+		imgPath: "/images/logos/mongodb.svg",
+	},
+	{
+		name: "Firebase",
+		imgPath: "/images/logos/firebase.svg",
+	},
+	{
+		name: "PostgreSQL",
+		imgPath: "/images/logos/postgres.svg",
 	},
 ];
 
@@ -126,24 +133,24 @@ const techStackIcons: TechModel[] = [
 		scale: 1,
 		rotation: [0, 0, 0],
 	},
-	{
-		name: "Python Developer",
-		modelPath: "/models/python-transformed.glb",
-		scale: 0.8,
-		rotation: [0, 0, 0],
-	},
+	// {
+	// 	name: "Python Developer",
+	// 	modelPath: "/models/python-transformed.glb",
+	// 	scale: 0.8,
+	// 	rotation: [0, 0, 0],
+	// },
 	{
 		name: "Backend Developer",
 		modelPath: "/models/node-transformed.glb",
 		scale: 5,
 		rotation: [0, -Math.PI / 2, 0],
 	},
-	{
-		name: "Interactive Developer",
-		modelPath: "/models/three.js-transformed.glb",
-		scale: 0.05,
-		rotation: [0, 0, 0],
-	},
+	// {
+	// 	name: "Interactive Developer",
+	// 	modelPath: "/models/three.js-transformed.glb",
+	// 	scale: 0.05,
+	// 	rotation: [0, 0, 0],
+	// },
 	{
 		name: "Project Manager",
 		modelPath: "/models/git-svg-transformed.glb",
@@ -247,20 +254,15 @@ const testimonials = [
 
 const socialImgs = [
 	{
-		name: "insta",
-		imgPath: "/images/insta.png",
-	},
-	{
 		name: "fb",
 		imgPath: "/images/fb.png",
+		link: "https://www.facebook.com/share/1GQXUuyEto/?mibextid=wwXIfr",
 	},
-	{
-		name: "x",
-		imgPath: "/images/x.png",
-	},
+
 	{
 		name: "linkedin",
 		imgPath: "/images/linkedin.png",
+		link: "",
 	},
 ];
 

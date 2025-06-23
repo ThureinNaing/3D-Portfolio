@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import FeatureCard from "./section/FeatureCard";
 import ExperienceSection from "./section/ExperienceSection";
 import TechStack from "./section/TechStack";
-import Testimonial from "./section/Testimonial";
+// import Testimonial from "./section/Testimonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -19,7 +19,7 @@ const App = () => {
 			<FeatureCard />
 			<ExperienceSection />
 			<TechStack />
-			<Testimonial />
+			{/* <Testimonial /> */}
 			<Contact />
 			<Footer />
 		</>
