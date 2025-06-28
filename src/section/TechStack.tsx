@@ -72,7 +72,7 @@ const TechStack = () => {
 										alt="{techStackIcon.name}"
 									/>
 								</div>
-								<div className="padding-x w-full">
+								<div className="padding-x w-full py-4 ">
 									<p>{techStackIcon.name}</p>
 								</div>
 							</div>

@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const ShowcaseSection = () => {
 	// GSAP Animation
@@ -60,6 +61,15 @@ const ShowcaseSection = () => {
 								An app build with React, Firebase & TailwindCSS
 								for a fast, user friendly experience.
 							</p>
+							<a
+								href="https://github.com/ThureinNaing/BookStoreViteReact-Firebase"
+								className="flex  items-center border space-x-2 px-4 py-2 rounded-md bg-white text-black hover:bg-gray-200 transition-colors duration-300 max-w-fit text-sm"
+							>
+								<FaGithub />
+								<span className="font-semibold">
+									View on GitHub
+								</span>
+							</a>
 						</div>
 					</div>
 					{/* Right Showcase Content */}
@@ -71,16 +81,38 @@ const ShowcaseSection = () => {
 									alt="project2"
 								/>
 							</div>
-							<h2>Ecommerce Website</h2>
+							<div className="flex justify-between items-center mt-5">
+								<h2>Ecommerce Website</h2>
+								<a
+									href="https://github.com/ThureinNaing/React-Laravel"
+									className="flex  items-center border space-x-2 px-4 py-2 rounded-md bg-white text-black hover:bg-gray-200 transition-colors duration-300 w-fit text-sm"
+								>
+									<FaGithub />
+									<span className="font-semibold">
+										View on GitHub
+									</span>
+								</a>
+							</div>
 						</div>
 						<div className="project" ref={project3Ref}>
 							<div className="image-wrapper bg-[#ffe5e5]">
 								<img
-									src="/images/two-factor.png"
+									src="/images/SaaS-App.png"
 									alt="project2"
 								/>
 							</div>
-							<h2>Two-Factor Authentication</h2>
+							<div className="flex justify-between items-center mt-5">
+								<h2>SaaS Application</h2>
+								<a
+									href="https://github.com/ThureinNaing/saas-app"
+									className="flex  items-center border space-x-2 px-4 py-2 rounded-md bg-white text-black hover:bg-gray-200 transition-colors duration-300  w-fit text-sm"
+								>
+									<FaGithub />
+									<span className="font-semibold">
+										View on GitHub
+									</span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>

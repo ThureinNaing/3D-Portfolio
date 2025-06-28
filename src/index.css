@@ -201,7 +201,7 @@ section {
 			}
 
 			h2 {
-				@apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
+				@apply text-lg md:text-xl lg:text-2xl font-semibold;
 			}
 		}
 	}

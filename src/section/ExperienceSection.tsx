@@ -132,7 +132,7 @@ const ExperienceSection = () => {
 												<h1 className="font-semibold text-3xl">
 													{card.title}
 												</h1>
-												<p className="my-5 text-white-50">
+												<p className="my-5 text-white-50 border rounded-2xl px-5 py-2 border-[#839CB5] bg-zinc-900">
 													🗓️&nbsp;{card.date}
 												</p>
 												<p className="text-[#839CB5] italic">
